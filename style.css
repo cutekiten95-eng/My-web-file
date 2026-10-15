@@ -1110,3 +1110,73 @@ a:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
+.archive-section {
+  padding: clamp(3.5rem, 7vw, 6rem) clamp(1rem, 5vw, 4rem);
+  scroll-margin-top: 5rem;
+}
+.archive-heading {
+  max-width: 760px;
+  margin: 0 auto 2rem;
+}
+.archive-heading h2 {
+  margin: 0.25rem 0 0.8rem;
+}
+.archive-heading p {
+  line-height: 1.7;
+}
+.archive-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  gap: 1.1rem;
+}
+.archive-card {
+  padding: 1.25rem;
+  border: 1px solid rgba(255,255,255,0.38);
+  border-radius: var(--radius, 22px);
+  background: var(--surface, rgba(255,255,255,0.58));
+  box-shadow: var(--shadow, 0 12px 35px rgba(92, 45, 135, 0.10));
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  overflow-wrap: anywhere;
+}
+.archive-card h3 {
+  margin: 0.25rem 0 0.7rem;
+}
+.archive-card p {
+  line-height: 1.65;
+  margin: 0.45rem 0;
+}
+.archive-meta {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+.archive-empty {
+  padding: 1.25rem;
+  border: 1px dashed rgba(128, 80, 160, 0.4);
+  border-radius: var(--radius, 22px);
+  line-height: 1.7;
+}
+.archive-image {
+  display: block;
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 0.75rem 0;
+}
+.archive-link {
+  display: inline-flex;
+  margin-top: 0.5rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
